@@ -1,6 +1,10 @@
 package net.favianmad.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.favianmad.tutorialmod.item.ModCreativeModeTabs;
+import net.favianmad.tutorialmod.item.ModItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.CreativeModeTabEvent;
@@ -25,6 +29,8 @@ public class TutorialMod
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -43,7 +49,21 @@ public class TutorialMod
 
     private void addCreative(CreativeModeTabEvent.BuildContents event)
     {
-
+        if(event.getTab() == CreativeModeTabs.INGREDIENTS){
+            event.accept((ModItems.BLACK_OPAL));
+            event.accept((ModItems.Raw_BLACK_OPAL));
+            event.accept((ModItems.STEEL_INGOT));
+            event.accept((ModItems.RED_COPPER_INGOT));
+        }
+        if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB){
+        event.accept((ModItems.BLACK_OPAL));
+        event.accept((ModItems.Raw_BLACK_OPAL));
+        event.accept((ModItems.STEEL_INGOT));
+        event.accept((ModItems.RED_COPPER_INGOT));
+    }
+        if(event.getTab() == ModCreativeModeTabs.NIGGAZ_TAB){
+            event.accept((ModItems.BLACK_NIGGAZ));
+        }
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
