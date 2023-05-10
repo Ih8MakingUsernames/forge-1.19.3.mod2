@@ -12,7 +12,8 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = TutorialMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class ModCreativeModeTabs {
     public static CreativeModeTab TUTORIAL_TAB;
-    public static CreativeModeTab NIGGAZ_TAB;
+
+    public static CreativeModeTab MY_MOD_TAB;
 
     @SubscribeEvent
     public static void registerCreativeModeTabs(CreativeModeTabEvent.Register event){
@@ -21,9 +22,9 @@ public class ModCreativeModeTabs {
                 builder -> builder.icon(() -> new ItemStack(ModItems.BLACK_OPAL.get()))
                         .title(Component.translatable("creativemodetab.tutorial_tab")));
 
-        NIGGAZ_TAB = event.registerCreativeModeTab(new ResourceLocation(TutorialMod.MOD_ID, "niggaz_tab"),
-                builder -> builder.icon(() -> new ItemStack(ModItems.BLACK_NIGGAZ.get()))
-                        .title(Component.translatable("creativemodetab.niggaz_tab")));
+        MY_MOD_TAB = event.registerCreativeModeTab(new ResourceLocation(TutorialMod.MOD_ID, "my_mod_tab"),
+                builder -> builder.icon(() -> new ItemStack(ModItems.STEEL_INGOT.get()))
+                        .title(Component.translatable("creativemodetab.my_mod_tab")));
 
 
     }
