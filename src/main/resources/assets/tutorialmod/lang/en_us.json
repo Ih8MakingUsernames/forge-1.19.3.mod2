@@ -10,8 +10,9 @@
   "item.tutorialmod.raw_tungsten": "Raw Tungsten",
   "item.tutorialmod.raw_silver": "Raw Silver",
 
-  "item.tutorialmod.raw_bronze": "Raw bronze",
-  "item.tutorialmod.raw_brass": "Raw brass",
+  "item.tutorialmod.raw_bronze": "Raw Bronze",
+  "item.tutorialmod.raw_brass": "Raw Brass",
+  "item.tutorialmod.raw_red_copper": "Raw Red Copper",
 
   "item.tutorialmod.aluminum_ingot": "Aluminum Ingot",
   "item.tutorialmod.nickel_ingot": "Nickel Ingot",
@@ -27,6 +28,8 @@
 
   "item.tutorialmod.bronze_ingot": "Bronze Ingot",
   "item.tutorialmod.brass_ingot": "Brass Ingot",
+
+  "block.tutorialmod.black_opal_block": "Block of Black Opal",
 
   "creativemodetab.tutorial_tab": "Tutorial Tab",
   "creativemodetab.my_mod_tab": "My Mods Tab"

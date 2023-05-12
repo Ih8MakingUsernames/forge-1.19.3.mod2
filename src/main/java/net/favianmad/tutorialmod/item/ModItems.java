@@ -48,6 +48,8 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_BRASS = ITEMS.register("raw_brass",
             () -> new Item((new Item.Properties())));
 
+    public static final RegistryObject<Item> RAW_RED_COPPER = ITEMS.register("raw_red_copper",
+            () -> new Item((new Item.Properties())));
 
     //List Of Ingots:
 

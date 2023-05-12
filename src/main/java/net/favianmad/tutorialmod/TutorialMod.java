@@ -1,9 +1,9 @@
 package net.favianmad.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.favianmad.tutorialmod.block.ModBlocks;
 import net.favianmad.tutorialmod.item.ModCreativeModeTabs;
 import net.favianmad.tutorialmod.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,6 +30,7 @@ public class TutorialMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -51,83 +52,94 @@ public class TutorialMod
     {
         if(event.getTab() == CreativeModeTabs.INGREDIENTS){
 
-            event.accept((ModItems.BLACK_OPAL));
-            event.accept((ModItems.Raw_BLACK_OPAL));
+            event.accept(ModItems.Raw_BLACK_OPAL);
+            event.accept(ModItems.BLACK_OPAL);
 
             //List Of Raw Metals:
 
-            event.accept((ModItems.RAW_ALUMINUM));
-            event.accept((ModItems.RAW_NICKEL));
-            event.accept((ModItems.RAW_PLATINUM));
-            event.accept((ModItems.RAW_TIN));
-            event.accept((ModItems.RAW_TITANIUM));
-            event.accept((ModItems.RAW_TUNGSTEN));
-            event.accept((ModItems.RAW_SILVER));
+            event.accept(ModItems.RAW_ALUMINUM);
+            event.accept(ModItems.RAW_NICKEL);
+            event.accept(ModItems.RAW_PLATINUM);
+            event.accept(ModItems.RAW_TIN);
+            event.accept(ModItems.RAW_TITANIUM);
+            event.accept(ModItems.RAW_TUNGSTEN);
+            event.accept(ModItems.RAW_SILVER);
 
             //List of Raw Alloyed-metals:
 
-            event.accept((ModItems.RAW_BRASS));
-            event.accept((ModItems.RAW_BRONZE));
+            event.accept(ModItems.RAW_BRASS);
+            event.accept(ModItems.RAW_BRONZE);
+            event.accept(ModItems.RAW_RED_COPPER);
 
             //List of Ingots:
 
             //Nonalloyed Ingots:
 
-            event.accept((ModItems.ALUMINUM_INGOT));
-            event.accept((ModItems.NICKEL_INGOT));
-            event.accept((ModItems.PLATINUM_INGOT));
-            event.accept((ModItems.TIN_INGOT));
-            event.accept((ModItems.TITANIUM_INGOT));
-            event.accept((ModItems.TUNGSTEN_INGOT));
-            event.accept((ModItems.SILVER_INGOT));
+            event.accept(ModItems.ALUMINUM_INGOT);
+            event.accept(ModItems.NICKEL_INGOT);
+            event.accept(ModItems.PLATINUM_INGOT);
+            event.accept(ModItems.TIN_INGOT);
+            event.accept(ModItems.TITANIUM_INGOT);
+            event.accept(ModItems.TUNGSTEN_INGOT);
+            event.accept(ModItems.SILVER_INGOT);
 
             //Alloyed Ingots
 
-            event.accept((ModItems.STEEL_INGOT));
-            event.accept((ModItems.RED_COPPER_INGOT));
-            event.accept((ModItems.BRASS_INGOT));
-            event.accept((ModItems.BRONZE_INGOT));
+            event.accept(ModItems.STEEL_INGOT);
+            event.accept(ModItems.RED_COPPER_INGOT);
+            event.accept(ModItems.BRASS_INGOT);
+            event.accept(ModItems.BRONZE_INGOT);
         }
+
+        if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+        }
+
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB){
 
-        event.accept((ModItems.BLACK_OPAL));
-        event.accept((ModItems.Raw_BLACK_OPAL));
+        event.accept(ModItems.Raw_BLACK_OPAL);
+        event.accept(ModItems.BLACK_OPAL);
+        event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+
     }
         if(event.getTab() == ModCreativeModeTabs.MY_MOD_TAB){
 
             //List Of Raw Metals:
 
-            event.accept((ModItems.RAW_ALUMINUM));
-            event.accept((ModItems.RAW_NICKEL));
-            event.accept((ModItems.RAW_PLATINUM));
-            event.accept((ModItems.RAW_TIN));
-            event.accept((ModItems.RAW_TITANIUM));
-            event.accept((ModItems.RAW_TUNGSTEN));
-            event.accept((ModItems.RAW_SILVER));
+            event.accept(ModItems.RAW_ALUMINUM);
+            event.accept(ModItems.RAW_NICKEL);
+            event.accept(ModItems.RAW_PLATINUM);
+            event.accept(ModItems.RAW_TIN);
+            event.accept(ModItems.RAW_TITANIUM);
+            event.accept(ModItems.RAW_TUNGSTEN);
+            event.accept(ModItems.RAW_SILVER);
 
             //List of Raw Alloyed-metals:
 
-            event.accept((ModItems.RAW_BRASS));
-            event.accept((ModItems.RAW_BRONZE));
+            event.accept(ModItems.RAW_BRASS);
+            event.accept(ModItems.RAW_BRONZE);
+            event.accept(ModItems.RAW_RED_COPPER);
 
             //List of Ingots:
 
             //Nonalloyed Ingots:
 
-            event.accept((ModItems.ALUMINUM_INGOT));
-            event.accept((ModItems.NICKEL_INGOT));
-            event.accept((ModItems.PLATINUM_INGOT));
-            event.accept((ModItems.TIN_INGOT));
-            event.accept((ModItems.TITANIUM_INGOT));
-            event.accept((ModItems.TUNGSTEN_INGOT));
-            event.accept((ModItems.SILVER_INGOT));
+            event.accept(ModItems.ALUMINUM_INGOT);
+            event.accept(ModItems.NICKEL_INGOT);
+            event.accept(ModItems.PLATINUM_INGOT);
+            event.accept(ModItems.TIN_INGOT);
+            event.accept(ModItems.TITANIUM_INGOT);
+            event.accept(ModItems.TUNGSTEN_INGOT);
+            event.accept(ModItems.SILVER_INGOT);
 
             //Alloyed Ingots
 
-            event.accept((ModItems.STEEL_INGOT));
-            event.accept((ModItems.RED_COPPER_INGOT));
-            event.accept((ModItems.BRASS_INGOT));
-            event.accept((ModItems.BRONZE_INGOT));
+            event.accept(ModItems.STEEL_INGOT);
+            event.accept(ModItems.RED_COPPER_INGOT);
+            event.accept(ModItems.BRASS_INGOT);
+            event.accept(ModItems.BRONZE_INGOT);
+
+
 
         }
     }
