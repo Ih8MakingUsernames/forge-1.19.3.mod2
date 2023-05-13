@@ -59,6 +59,29 @@
   "block.tutorialmod.deepslate_tungsten_ore": "Deepslate Tungsten Ore",
   "block.tutorialmod.netherrack_tungsten_ore": "Netherrack Tungsten Ore",
 
+  "block.tutorialmod.aluminum_block": "Block of Aluminum",
+  "block.tutorialmod.brass_block": "Block of Brass",
+  "block.tutorialmod.bronze_block": "Block of Bronze",
+  "block.tutorialmod.nickel_block": "Block of Nickel",
+  "block.tutorialmod.platinum_block": "Block of Platinum",
+  "block.tutorialmod.red_copper_block": "Block of Red Copper",
+  "block.tutorialmod.silver_block": "Block of Silver",
+  "block.tutorialmod.steel_block": "Block of Steel",
+  "block.tutorialmod.tin_block": "Block of Tin",
+  "block.tutorialmod.titanium_block": "Block of Titanium",
+  "block.tutorialmod.tungsten_block": "Block of Tungsten",
+
+  "block.tutorialmod.raw_tungsten_block": "Block of Raw Tungsten",
+  "block.tutorialmod.raw_aluminum_block": "Block of Raw Aluminum",
+  "block.tutorialmod.raw_red_copper_block": "Block of Raw Red Copper",
+  "block.tutorialmod.raw_brass_block": "Block of Raw Brass",
+  "block.tutorialmod.raw_bronze_block": "Block of Raw bronze",
+  "block.tutorialmod.raw_nickel_block": "Block of Raw Nickel",
+  "block.tutorialmod.raw_platinum_block": "Block of Raw Platinum",
+  "block.tutorialmod.raw_silver_block": "Block of Raw Silver",
+  "block.tutorialmod.raw_tin_block": "Block of Raw Tin",
+  "block.tutorialmod.raw_titanium_block": "Block of Raw Titanium",
+
   "creativemodetab.tutorial_tab": "Tutorial Tab",
   "creativemodetab.my_mod_tab": "My Mods Tab"
 }

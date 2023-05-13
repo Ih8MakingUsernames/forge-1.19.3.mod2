@@ -92,13 +92,27 @@ public class TutorialMod
         }
 
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
+
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
+            event.accept(ModBlocks.RED_COPPER_BLOCK);
+            event.accept(ModBlocks.ALUMINUM_BLOCK);
+            event.accept(ModBlocks.BRASS_BLOCK);
+            event.accept(ModBlocks.BRONZE_BLOCK);
+            event.accept(ModBlocks.NICKEL_BLOCK);
+            event.accept(ModBlocks.PLATINUM_BLOCK);
+            event.accept(ModBlocks.SILVER_BLOCK);
+            event.accept(ModBlocks.TIN_BLOCK);
+            event.accept(ModBlocks.TITANIUM_BLOCK);
+            event.accept(ModBlocks.TUNGSTEN_BLOCK);
+            event.accept(ModBlocks.STEEL_BLOCK);
         }
+
         if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
             event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
             event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
             event.accept(ModBlocks.BLACK_OPAL_ORE);
             event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+
             event.accept(ModBlocks.RED_COPPER_ORE);
             event.accept(ModBlocks.ALUMINUM_ORE);
             event.accept(ModBlocks.DEEPSLATE_ALUMINUM_ORE);
@@ -122,6 +136,21 @@ public class TutorialMod
             event.accept(ModBlocks.NETHERRACK_PLATINUM_ORE);
             event.accept(ModBlocks.NETHERRACK_TITANIUM_ORE);
             event.accept(ModBlocks.NETHERRACK_TUNGSTEN_ORE);
+
+            event.accept(ModBlocks.RAW_RED_COPPER_BLOCK);
+            event.accept(ModBlocks.RAW_ALUMINUM_BLOCK);
+            event.accept(ModBlocks.RAW_BRASS_BLOCK);
+            event.accept(ModBlocks.RAW_BRONZE_BLOCK);
+            event.accept(ModBlocks.RAW_NICKEL_BLOCK);
+            event.accept(ModBlocks.RAW_PLATINUM_BLOCK);
+            event.accept(ModBlocks.RAW_SILVER_BLOCK);
+            event.accept(ModBlocks.RAW_TIN_BLOCK);
+            event.accept(ModBlocks.RAW_TITANIUM_BLOCK);
+            event.accept(ModBlocks.RAW_TUNGSTEN_BLOCK);
+        }
+
+        if(event.getTab() == CreativeModeTabs.REDSTONE_BLOCKS){
+            event.accept(ModBlocks.RED_COPPER_BLOCK);
         }
 
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB){
@@ -198,6 +227,33 @@ public class TutorialMod
             event.accept(ModBlocks.NETHERRACK_PLATINUM_ORE);
             event.accept(ModBlocks.NETHERRACK_TITANIUM_ORE);
             event.accept(ModBlocks.NETHERRACK_TUNGSTEN_ORE);
+
+            //Metal Blocks:
+
+            event.accept(ModBlocks.RED_COPPER_BLOCK);
+            event.accept(ModBlocks.ALUMINUM_BLOCK);
+            event.accept(ModBlocks.BRASS_BLOCK);
+            event.accept(ModBlocks.BRONZE_BLOCK);
+            event.accept(ModBlocks.NICKEL_BLOCK);
+            event.accept(ModBlocks.PLATINUM_BLOCK);
+            event.accept(ModBlocks.SILVER_BLOCK);
+            event.accept(ModBlocks.TIN_BLOCK);
+            event.accept(ModBlocks.TITANIUM_BLOCK);
+            event.accept(ModBlocks.TUNGSTEN_BLOCK);
+            event.accept(ModBlocks.STEEL_BLOCK);
+
+            //Raw Metal Blocks:
+
+            event.accept(ModBlocks.RAW_RED_COPPER_BLOCK);
+            event.accept(ModBlocks.RAW_ALUMINUM_BLOCK);
+            event.accept(ModBlocks.RAW_BRASS_BLOCK);
+            event.accept(ModBlocks.RAW_BRONZE_BLOCK);
+            event.accept(ModBlocks.RAW_NICKEL_BLOCK);
+            event.accept(ModBlocks.RAW_PLATINUM_BLOCK);
+            event.accept(ModBlocks.RAW_SILVER_BLOCK);
+            event.accept(ModBlocks.RAW_TIN_BLOCK);
+            event.accept(ModBlocks.RAW_TITANIUM_BLOCK);
+            event.accept(ModBlocks.RAW_TUNGSTEN_BLOCK);
 
         }
     }
