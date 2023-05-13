@@ -94,6 +94,35 @@ public class TutorialMod
         if(event.getTab() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.BLACK_OPAL_BLOCK);
         }
+        if(event.getTab() == CreativeModeTabs.NATURAL_BLOCKS){
+            event.accept(ModBlocks.DEEPSLATE_BLACK_OPAL_ORE);
+            event.accept(ModBlocks.NETHERRACK_BLACK_OPAL_ORE);
+            event.accept(ModBlocks.BLACK_OPAL_ORE);
+            event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
+            event.accept(ModBlocks.RED_COPPER_ORE);
+            event.accept(ModBlocks.ALUMINUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ALUMINUM_ORE);
+            event.accept(ModBlocks.BRASS_ORE);
+            event.accept(ModBlocks.DEEPSLATE_BRASS_ORE);
+            event.accept(ModBlocks.BRONZE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_BRONZE_ORE);
+            event.accept(ModBlocks.NICKEL_ORE);
+            event.accept(ModBlocks.DEEPSLATE_NICKEL_ORE);
+            event.accept(ModBlocks.PLATINUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_RED_COPPER_ORE);
+            event.accept(ModBlocks.SILVER_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SILVER_ORE);
+            event.accept(ModBlocks.TIN_ORE);
+            event.accept(ModBlocks.DEEPSLATE_TIN_ORE);
+            event.accept(ModBlocks.TITANIUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_TITANIUM_ORE);
+            event.accept(ModBlocks.TUNGSTEN_ORE);
+            event.accept(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+            event.accept(ModBlocks.NETHERRACK_PLATINUM_ORE);
+            event.accept(ModBlocks.NETHERRACK_TITANIUM_ORE);
+            event.accept(ModBlocks.NETHERRACK_TUNGSTEN_ORE);
+        }
 
         if(event.getTab() == ModCreativeModeTabs.TUTORIAL_TAB){
 
@@ -105,8 +134,8 @@ public class TutorialMod
         event.accept(ModBlocks.BLACK_OPAL_ORE);
         event.accept(ModBlocks.ENDSTONE_BLACK_OPAL_ORE);
 
-
     }
+
         if(event.getTab() == ModCreativeModeTabs.MY_MOD_TAB){
 
             //List Of Raw Metals:
@@ -144,7 +173,31 @@ public class TutorialMod
             event.accept(ModItems.BRASS_INGOT);
             event.accept(ModItems.BRONZE_INGOT);
 
+            //Ores:
 
+            event.accept(ModBlocks.RED_COPPER_ORE);
+            event.accept(ModBlocks.ALUMINUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_ALUMINUM_ORE);
+            event.accept(ModBlocks.BRASS_ORE);
+            event.accept(ModBlocks.DEEPSLATE_BRASS_ORE);
+            event.accept(ModBlocks.BRONZE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_BRONZE_ORE);
+            event.accept(ModBlocks.NICKEL_ORE);
+            event.accept(ModBlocks.DEEPSLATE_NICKEL_ORE);
+            event.accept(ModBlocks.PLATINUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_PLATINUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_RED_COPPER_ORE);
+            event.accept(ModBlocks.SILVER_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SILVER_ORE);
+            event.accept(ModBlocks.TIN_ORE);
+            event.accept(ModBlocks.DEEPSLATE_TIN_ORE);
+            event.accept(ModBlocks.TITANIUM_ORE);
+            event.accept(ModBlocks.DEEPSLATE_TITANIUM_ORE);
+            event.accept(ModBlocks.TUNGSTEN_ORE);
+            event.accept(ModBlocks.DEEPSLATE_TUNGSTEN_ORE);
+            event.accept(ModBlocks.NETHERRACK_PLATINUM_ORE);
+            event.accept(ModBlocks.NETHERRACK_TITANIUM_ORE);
+            event.accept(ModBlocks.NETHERRACK_TUNGSTEN_ORE);
 
         }
     }
