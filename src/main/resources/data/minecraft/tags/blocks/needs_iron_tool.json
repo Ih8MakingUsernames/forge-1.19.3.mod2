@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "tutorialmod:black_opal_ore",
-    "tutorialmod:deepslate_black_opal_ore"
+    "tutorialmod:deepslate_black_opal_ore",
+    "tutorialmod:aluminum_ore",
+    "tutorialmod:deepslate_aluminum_ore"
   ]
 }
